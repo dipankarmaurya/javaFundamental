@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select</title>
+     <style>
+         div{
+             width: 100px;
+             height: 100px;
+             background-color: red; 
+            
+         }
+
+         span{
+             display: none;
+         }
+         div:hover span{
+             display: block;
+         }
+     </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Nmae</label>
+      <input type="text" name="name" placeholder="Name" minlength="3" required pattern="[a-zA-Z]" />
+      <!-- select tag -->
+      <label for="selector">Select items</label>
+      <select name="" id="selector">
+        <option value="car">Car</option>
+        <option value="bicycle">bicycle</option>
+        <option value="motor">motor</option>
+        <option value="bus">Buse</option>
+      </select>
+     
+      <input type="submit" value="submit">
+    </form>
+    <form action="">
+        <input type="text" placeholder="+91" minlength="10" required />
+        <input type="text" placeholder="email" pattern=".+@dingoo\.com">
+        <input type="text"placeholder="password" minlength="8" required >
+        <input type="submit" value="submit">
+    </form>
+  </body>
+  <div>
+      <span>hey guys hover on me</span>
+  </div>
+</html>
